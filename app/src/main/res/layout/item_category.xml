@@ -1,0 +1,63 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="5dp">
+
+       <com.balysv.materialripple.MaterialRippleLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:mrl_rippleAlpha="0.2"
+           app:mrl_rippleColor="@color/colorRipple"
+           app:mrl_rippleHover="true"
+           app:mrl_rippleOverlay="true">
+
+           <LinearLayout
+               android:id="@+id/lyt_parent"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical"
+               android:orientation="horizontal"
+               android:padding="10dp">
+
+               <com.mikhaellopez.circularimageview.CircularImageView
+                   android:id="@+id/category_image"
+                   android:layout_width="48dp"
+                   android:layout_height="48dp"
+                   android:layout_margin="5dp"
+                   android:scaleType="centerCrop"
+                   android:src="@drawable/ic_thumbnail"
+                   app:civ_border_width="0dp" />
+
+               <LinearLayout
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginStart="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:id="@+id/category_name"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:maxLines="1"
+                       android:text="Category"
+                       android:textColor="@color/colorText"
+                       android:textSize="16sp" />
+
+                   <TextView
+                       android:id="@+id/video_count"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:maxLines="1"
+                       android:text="5 video(s)" />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </com.balysv.materialripple.MaterialRippleLayout>
+
+</androidx.cardview.widget.CardView>

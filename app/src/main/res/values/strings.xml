@@ -1,0 +1,95 @@
+<resources>
+
+    <!--application name-->
+    <string name="app_name">Girls Numbers</string>
+
+    <!--tab name-->
+    <string name="tab_recent">Recent Videos</string>
+    <string name="tab_category">Category</string>ca-app-pub-2457650178900485~5622558584
+
+    <!--AdMob-->
+    <string name="admob_publisher_id">2457650178900485</string>
+    <string name="admob_app_id">ca-app-pub-2457650178900485~5622558584</string>
+
+
+    <!-- youtube -->
+    <string name="youtube_api_key">AIzaSyDxwi0ZL7KqcEaOKe_LkBGnobx1ygh_Jfg</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <!--navigation drawer menu name-->
+    <string name="drawer_recent">Recent Videos</string>
+    <string name="drawer_category">Category</string>
+    <string name="drawer_favorite">Favorite</string>
+    <string name="drawer_separator_name">Other</string>
+    <string name="drawer_rate">Rate</string>
+    <string name="drawer_more">More</string>
+    <string name="drawer_share">Share</string>
+    <string name="drawer_about">About</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- play store application link i.e more apps -->
+    <string name="play_more_apps">https://play.google.com/store/apps/developer?id=normalmind</string>
+    <string name="privacy_policy_url">https://www.privacypolicygenerator.info/live.php?token=EBy9fYrl16xLpaJTHbVl14DdixQej67A</string>
+
+
+    <string name="update">App Update</string>
+    <string name="update_message">Thank you for using our app,We have updated app so kindly update it and enjoye.</string>
+    <string name="update_button">Update</string>
+    <string name="cancel_button">Cancel</string>
+
+
+    <!--app about information-->
+
+    <string name="about_app_name">Application Name</string>
+    <string name="about_app_version">Build Version</string>
+    <string name="about_app_email">Email</string>
+    <string name="about_app_copyright">Copyright</string>
+    <string name="about_app_rate">Rate</string>
+    <string name="about_app_more">More</string>
+    <string name="about_app_privacy_policy">Terms &amp; Policies</string>
+    <string name="sub_about_app_version">Version 3.3.1</string>
+    <string name="sub_about_app_email">mirza123456789@gmail.com</string>
+    <string name="sub_about_app_copyright">Copyright &#169; 2020 mirasi Developer \n All rights reserved</string>
+    <string name="sub_about_app_rate">Give your rate and feedback</string>
+    <string name="sub_about_app_more">More apps from developer</string>
+    <string name="sub_about_app_privacy_policy">Terms &amp; Policies of Your Videos Channel</string>
+
+    <!--network & error message-->
+    <string name="network_required">Required Internet to Play Video!</string>
+    <string name="failed_title_text">Whoops!</string>
+    <string name="failed_text">No internet connections found. Check your connection or try again!</string>
+    <string name="no_internet_text">No Internet Connection!</string>
+    <string name="no_category_found">No category found!!</string>
+    <string name="no_post_found">if you want to continue search, please try enter another keyword!</string>
+    <string name="msg_search_input">Please Insert Keyword</string>
+
+    <!--favorite-->
+    <string name="favorite_add">Add to Favorite</string>
+    <string name="favorite_remove">Remove from Favorite</string>
+    <string name="favorite_added">Added to Favorite</string>
+    <string name="favorite_removed">Removed from Favorite</string>
+    <string name="no_favorite_found">Your favorite list is empty because you don\'t add any videos in the favorite menu</string>
+
+    <!--package validation-->
+    <string name="msg_validate">Unfortunately, your applicationId or package name is not registered.\n\nplease login to your admin panel and register your applicationId or package name in settings menu in the admin panel to continue using app.</string>
+
+    <!--dialog choose option-->
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_read_more">Read More</string>
+    <string name="dialog_dismiss">Dismiss</string>
+
+    <!--others-->
+    <string name="share_text">I Would like to share this with you. Here You Can Download This Application from PlayStore</string>
+    <string name="whops">Whoops!</string>
+    <string name="press_again_to_exit">Press again to exit app</string>
+    <string name="video_count_text">video(s)</string>
+    <string name="views_count">views</string>
+    <string name="btn_retry">Retry</string>
+    <string name="search">Search</string>
+    <string name="search_text">Search&#8230;</string>
+    <string name="share">Share</string>
+    <string name="log_in">Login</string>
+    <string name="facbooktop">Facebook</string>
+
+</resources>

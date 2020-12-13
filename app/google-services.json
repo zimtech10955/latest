@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "44556260183",
+    "firebase_url": "https://whatsapp-online-29d94-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "whatsapp-online-29d94",
+    "storage_bucket": "whatsapp-online-29d94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44556260183:android:af1f9689236db1c10aa412",
+        "android_client_info": {
+          "package_name": "com.girlsnumberss.meerchiwpssp21"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44556260183-fri98brc2cvmlnakpntmov0rbmq4teeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8-S0FvAgzXIl2FZzM4BJK3QUAD15zwbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44556260183-fri98brc2cvmlnakpntmov0rbmq4teeh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

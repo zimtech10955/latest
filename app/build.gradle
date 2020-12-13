@@ -1,0 +1,80 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/'}
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.1'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.girlsnumberss.meerchiwpssp21"
+
+        manifestPlaceholders = [onesignal_app_id: "2c180aa6-ddcc-42c5-94e2-0835f1929317",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
+
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+
+}
+
+/* IMPORTANT : Highly recommended to keep the library version
+Be careful when update dependencies, different library version may caused error */
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.google.android.exoplayer:exoplayer:$exoplayer_version"
+    implementation "com.google.android.exoplayer:extension-rtmp:$exoplayer_version"
+    implementation 'com.google.android.gms:play-services-ads:17.2.0'
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.balysv:material-ripple:1.0.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.onesignal:OneSignal:3.10.6'
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.7'
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+
+    implementation 'com.google.firebase:firebase-database:19.4.0'
+
+    implementation 'com.facebook.android:audience-network-sdk:6.1.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'com.firebaseui:firebase-ui-database:7.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'

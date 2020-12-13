@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firebase.GirlDetailActivity">
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/profileImage"
+            android:layout_width="match_parent"
+            android:layout_height="175dp" />
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:background="@drawable/border_shape"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_man_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_weight="2"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/displayName"
+                android:textSize="18sp"
+                android:text="Adil Sattar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_next_black"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:background="@drawable/border_shape"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_weight="2"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/displayCountry"
+                android:textSize="18sp"
+                android:text="Pakistan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_next_black"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:background="@drawable/border_shape"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_weight="2"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/displayAge"
+                android:textSize="18sp"
+                android:text="28 Years"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_next_black"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/imageViewChat"
+                    android:src="@drawable/ic_chat_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="Chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewPhone"
+                    android:layout_width="57dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_telephone" />
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:text="Call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/fb_native_ad"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
